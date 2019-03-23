@@ -5,9 +5,9 @@
   <subtitle>Jeamotu</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://fuchsia.tech/"/>
-  <updated>2018-09-09T12:40:12.432Z</updated>
-  <id>http://fuchsia.tech/</id>
+  <link href="https://Jeamotu.cn/"/>
+  <updated>2019-03-23T06:18:53.034Z</updated>
+  <id>https://Jeamotu.cn/</id>
   
   <author>
     <name>初见</name>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>Fuchsia相关</title>
-    <link href="http://fuchsia.tech/2018/09/09/Fuchsia%E7%9B%B8%E5%85%B3/"/>
-    <id>http://fuchsia.tech/2018/09/09/Fuchsia相关/</id>
+    <link href="https://Jeamotu.cn/2018/09/09/Fuchsia%E7%9B%B8%E5%85%B3/"/>
+    <id>https://Jeamotu.cn/2018/09/09/Fuchsia相关/</id>
     <published>2018-09-09T09:08:32.000Z</published>
-    <updated>2018-09-09T12:40:12.432Z</updated>
+    <updated>2019-03-23T06:18:53.034Z</updated>
     
     <content type="html"><![CDATA[<p>Pink + Purple == Fuchsia (a new Operating System)<br>Google的一个新的操作系统，内容持续更新中。<br><a id="more"></a></p>]]></content>
     
@@ -32,18 +32,18 @@
     </summary>
     
     
-      <category term="Fuchsia" scheme="http://fuchsia.tech/tags/Fuchsia/"/>
+      <category term="Fuchsia" scheme="https://Jeamotu.cn/tags/Fuchsia/"/>
     
-      <category term="Google" scheme="http://fuchsia.tech/tags/Google/"/>
+      <category term="Google" scheme="https://Jeamotu.cn/tags/Google/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu下ShadowSocks搭建服务端篇</title>
-    <link href="http://fuchsia.tech/2018/09/09/Ubuntu%E4%B8%8BShadowSocks%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E7%AB%AF%E7%AF%87/"/>
-    <id>http://fuchsia.tech/2018/09/09/Ubuntu下ShadowSocks搭建服务端篇/</id>
+    <link href="https://Jeamotu.cn/2018/09/09/Ubuntu%E4%B8%8BShadowSocks%E6%90%AD%E5%BB%BA%E6%9C%8D%E5%8A%A1%E7%AB%AF%E7%AF%87/"/>
+    <id>https://Jeamotu.cn/2018/09/09/Ubuntu下ShadowSocks搭建服务端篇/</id>
     <published>2018-09-09T09:04:21.000Z</published>
-    <updated>2018-09-09T09:12:41.036Z</updated>
+    <updated>2019-03-23T06:18:06.602Z</updated>
     
     <content type="html"><![CDATA[<p><br>本篇文章主要介绍Ubuntu下面如何搭建ShadowSocks[R]服务端。<br><br><a id="more"></a></p>]]></content>
     
@@ -54,18 +54,18 @@
     </summary>
     
     
-      <category term="Linux" scheme="http://fuchsia.tech/tags/Linux/"/>
+      <category term="Linux" scheme="https://Jeamotu.cn/tags/Linux/"/>
     
-      <category term="SS" scheme="http://fuchsia.tech/tags/SS/"/>
+      <category term="SS" scheme="https://Jeamotu.cn/tags/SS/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu下ShadowSocks搭建客户端篇</title>
-    <link href="http://fuchsia.tech/2016/12/04/Ubuntu%E4%B8%8BShadowSocks%E6%90%AD%E5%BB%BA%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%AF%87/"/>
-    <id>http://fuchsia.tech/2016/12/04/Ubuntu下ShadowSocks搭建客户端篇/</id>
+    <link href="https://Jeamotu.cn/2016/12/04/Ubuntu%E4%B8%8BShadowSocks%E6%90%AD%E5%BB%BA%E5%AE%A2%E6%88%B7%E7%AB%AF%E7%AF%87/"/>
+    <id>https://Jeamotu.cn/2016/12/04/Ubuntu下ShadowSocks搭建客户端篇/</id>
     <published>2016-12-04T15:59:00.000Z</published>
-    <updated>2018-09-09T09:03:27.798Z</updated>
+    <updated>2019-03-23T06:17:59.241Z</updated>
     
     <content type="html"><![CDATA[<p>本篇文章主要介绍Ubuntu下面如何使用ShadowSocks来进行科学上网。<br><a id="more"></a><br>作为一个程序员，<strong>翻墙</strong>可谓是手到擒来，自己租个服务器，当然也有免费的服务器可以用，可能网速稍差。然后再搭个PPTP或者SS，接着就可以看看外面的世界了，刷刷Twitter、FB，看看Youtube，当然更重要的是获取外面的源码。</p><p>Windows下的翻墙就不必赘述了，各种VPN软件很放方便。但是Linux下如果不会的话还要折腾一番。今天就来教大家<strong>Ubuntu</strong>下怎么使用<strong>SS</strong>翻墙，主要是因为我用的是SS没有用VPN，所以VPN的使用就由大家自己去研究了。</p><h4 id="安装SS"><a href="#安装SS" class="headerlink" title="安装SS"></a>安装SS</h4><ol><li>首先需要保证你的网络是畅通的，然后更新软件源，用下面的命令<br><code>sudo apt-get update</code></li><li>然后安装<strong>python-pip</strong><br><code>sudo apt-get install python-pip</code></li><li>安装SS<br><code>sudo pip install shadowsocks</code></li><li><p>配置SS<br><code>sudo vim /etc/shadowsocks.json</code><br>输入以下代码</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"> &#123;</span><br><span class="line">    &quot;server&quot;: &quot;你的服务器ip&quot;,</span><br><span class="line">    &quot;server_port&quot;: 你的服务器端口,</span><br><span class="line">    &quot;local_address&quot;: &quot;127.0.0.1&quot;,</span><br><span class="line">    &quot;local_port&quot;: 1080,</span><br><span class="line">    &quot;password&quot;: &quot;你的SS密码&quot;,</span><br><span class="line">    &quot;method&quot;: &quot;aes-256-cfb&quot;,</span><br><span class="line">    &quot;fast_open&quot;: true,</span><br><span class="line">    &quot;timeout&quot;:300</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li><p>启动SS<br><code>sudo sslocal -c /etc/shadowsocks.json</code></p></li></ol><blockquote><p>上述命令执行后，此终端是不能关闭的，否则SS会被关闭，所以第6步的操作就是实现开机自启，这样SS就会在后台运行了，不会影响我们做其他事情。如果不想重启后再安装privoxy，那就执行<code>CTRL+ALT+T</code>开一个新的终端继续下面的操作，同时这个运行SS的终端可以看到网络连接的输出信息。</p></blockquote><ol start="6"><li>开机自动启动SS<br>将上面的代码加入到<code>/etc/rc.local</code>文件中的<code>exit 0</code>这句代码之前。</li></ol><p>以上就是SS的搭建了，这个时候我们发现上网时并不可以翻墙，原因是需要将sock5代理映射为http代理。代理的软件很多，我选择了推荐度比较高的privoxy，下面是privoxy的配置。</p><h4 id="安装privoxy"><a href="#安装privoxy" class="headerlink" title="安装privoxy"></a>安装privoxy</h4><ol><li>安装privoxy<br><code>sudo apt-get install privoxy</code></li><li>配置privoxy<br>打开<code>/etc/privoxy/config</code><br>找到其中的4.1节，看一下有没有一句<code>listen-address  localhost:8118</code>的代码，如果被注释了，取消注释。因为版本不一样这句的状态可能会不一样。<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/img/SS/ss_4_1.png" alt="4.1节" title="">                </div>                <div class="image-caption">4.1节</div>            </figure>接着找到5.2节，在本节末尾加入下面代码<br><code>forward-socks5 / 127.0.0.1:1080 .</code><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/img/SS/ss_5_2.png" alt="5.2节" title="">                </div>                <div class="image-caption">5.2节</div>            </figure></li><li>重启privoxy服务<br><code>sudo /etc/init.d/privoxy restart</code></li><li>开机自启privoxy服务<br>将<code>sudo /etc/init.d/privoxy start</code>代码加入到<code>/etc/rc.local</code>文件中的<code>exit 0</code>这句代码之前。</li></ol><p>配置后的rc.local如下<br><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/img/SS/ss_rc_local.png" alt="rc.local" title="">                </div>                <div class="image-caption">rc.local</div>            </figure></p><p>以上就是privoxy的配置了，接着需要配置终端和Firefox浏览器的代理。</p><h4 id="代理配置"><a href="#代理配置" class="headerlink" title="代理配置"></a>代理配置</h4><ol><li>终端代理<br>将以下代码追加到<code>/etc/profile</code>中或者<code>~/.bashrc</code>中<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">export http_proxy=&quot;127.0.0.1:8118&quot;</span><br><span class="line">export https_proxy=&quot;127.0.0.1:8118&quot;</span><br><span class="line">export ftp_proxy=&quot;127.0.0.1:8118&quot;</span><br></pre></td></tr></table></figure></li></ol><p>接着执行<code>source /etc/profile</code>或者<code>source ~/.bashrc</code>，这样就完成了终端翻墙的配置，执行<code>wget google.com</code>测试一下。<br><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/img/SS/wget_google.png" alt="测试" title="">                </div>                <div class="image-caption">测试</div>            </figure></p><blockquote><p>此处连接失败可能有多种情况</p><ol><li>SS配置文件有误，请确认</li><li>SS未启动，请手动启动或者加到rc.local里开机自启后重启电脑</li><li>privoxy配置有误，请参照教程确认一下</li><li>privoxy端口冲突(猜测)，将privoxy配置章节中的8118端口改为其他端口号</li><li>privoxy未启动，请执行<code>sudo /etc/init.d/privoxy restart</code></li><li>环境变量设置有误，确认<code>/etc/profile</code>和<code>~/.bashrc</code>文件，当猜测为端口冲突的情况下，此处环境变量内的端口值也要改为第4种情况中修改后的端口，同时别忘了执行<code>source</code>命令</li></ol></blockquote><ol start="2"><li>Firefox浏览器的配置，打开<strong>设置</strong>-&gt;<strong>高级</strong>-&gt;<strong>网络</strong>-&gt;<strong>连接</strong>，配置如下<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/img/SS/filefox_proxy.png" alt="Firefox配置" title="">                </div>                <div class="image-caption">Firefox配置</div>            </figure>注意需要将那个勾打上哦～<br>测试一下Twitter<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/img/SS/tw.png" alt="Twitter喜欢的可以关注哦～" title="">                </div>                <div class="image-caption">Twitter喜欢的可以关注哦～</div>            </figure></li></ol><p>经过以上的配置以后，我们就可以愉快的看外面的世界了，至于可以访问的网页就需要看你的SS设置的规则了。可能是我之前用server版的Linux用多了，代理就想着往文件里面加 0.0。当我用Chrome的时候，提示我它的代理用的就是系统代理，我才想起来还有个系统代理。如果想全部使用代理的话，系统代理就这样配置。<strong>系统设置</strong>-&gt;<strong>网络</strong><br><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/img/SS/ss_sys_proxy.png" alt="系统代理" title="">                </div>                <div class="image-caption">系统代理</div>            </figure><br>当不想使用全局代理的时候将<strong>Manual</strong>选为<strong>None</strong>就好了。</p><p>好了，以上就是Ubuntu下的SS配置了，感兴趣的朋友可以关注一下呦～</p>]]></content>
     
@@ -76,9 +76,9 @@
     </summary>
     
     
-      <category term="Linux" scheme="http://fuchsia.tech/tags/Linux/"/>
+      <category term="Linux" scheme="https://Jeamotu.cn/tags/Linux/"/>
     
-      <category term="SS" scheme="http://fuchsia.tech/tags/SS/"/>
+      <category term="SS" scheme="https://Jeamotu.cn/tags/SS/"/>
     
   </entry>
   
