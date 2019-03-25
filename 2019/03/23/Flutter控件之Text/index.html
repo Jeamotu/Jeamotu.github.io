@@ -34,7 +34,12 @@
 <meta property="og:image" content="https://jeamotu.cn/img/Flutter/TextWigdet/textstyle_fontsize.png">
 <meta property="og:image" content="https://jeamotu.cn/img/Flutter/TextWigdet/textstyle_fontweight.png">
 <meta property="og:image" content="https://jeamotu.cn/img/Flutter/TextWigdet/text_fontstyle.png">
-<meta property="og:updated_time" content="2019-03-24T11:05:54.511Z">
+<meta property="og:image" content="https://jeamotu.cn/img/Flutter/TextWigdet/textstyle_letterSpacing.png">
+<meta property="og:image" content="https://jeamotu.cn/img/Flutter/TextWigdet/textstyle_wordSpacing.png">
+<meta property="og:image" content="https://jeamotu.cn/img/Flutter/TextWigdet/textstyle_height.png">
+<meta property="og:image" content="https://jeamotu.cn/img/Flutter/TextWigdet/textstyle_foreground.png">
+<meta property="og:image" content="https://jeamotu.cn/img/Flutter/TextWigdet/textstyle_background.png">
+<meta property="og:updated_time" content="2019-03-25T15:53:26.006Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Flutter控件之Text">
 <meta name="twitter:description" content="Text 控件是 Flutter 中最基本的一个控件，用来显示一个文本。">
@@ -157,7 +162,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#创建方法"><span class="post-toc-number">1.</span> <span class="post-toc-text">创建方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#构造方法简介"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">构造方法简介</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#第一个必选参数-String-data"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">第一个必选参数 String data</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#第一个可选参数-Key-key"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">第一个可选参数 Key key</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#第二个可选参数-TextStyle-style"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">第二个可选参数 TextStyle style</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#TextStyle的第一个可选参数-bool-inherit"><span class="post-toc-number">1.1.3.1.</span> <span class="post-toc-text">TextStyle的第一个可选参数 bool inherit</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#TextStyle的第二个可选参数-Color-color"><span class="post-toc-number">1.1.3.2.</span> <span class="post-toc-text">TextStyle的第二个可选参数 Color color</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#TextStyle的第三个可选参数-double-fontSize"><span class="post-toc-number">1.1.3.3.</span> <span class="post-toc-text">TextStyle的第三个可选参数 double fontSize</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#TextStyle的第四个可选参数-FontWeight-fontWeight"><span class="post-toc-number">1.1.3.4.</span> <span class="post-toc-text">TextStyle的第四个可选参数 FontWeight fontWeight</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#TextStyle的第五个可选参数-FontStyle-fontStyle"><span class="post-toc-number">1.1.3.5.</span> <span class="post-toc-text">TextStyle的第五个可选参数 FontStyle fontStyle</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#TextStyle的第六个可选参数-double-letterSpacing"><span class="post-toc-number">1.1.3.6.</span> <span class="post-toc-text">TextStyle的第六个可选参数 double letterSpacing</span></a></li></ol></li></ol></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#创建方法"><span class="post-toc-number">1.</span> <span class="post-toc-text">创建方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#构造方法简介"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">构造方法简介</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#第一个必选参数-String-data"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">第一个必选参数 String data</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#第一个可选参数-Key-key"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">第一个可选参数 Key key</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#第二个可选参数-TextStyle-style"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">第二个可选参数 TextStyle style</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#TextStyle的第一个可选参数-bool-inherit"><span class="post-toc-number">1.1.3.1.</span> <span class="post-toc-text">TextStyle的第一个可选参数 bool inherit</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#TextStyle的第二个可选参数-Color-color"><span class="post-toc-number">1.1.3.2.</span> <span class="post-toc-text">TextStyle的第二个可选参数 Color color</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#TextStyle的第三个可选参数-double-fontSize"><span class="post-toc-number">1.1.3.3.</span> <span class="post-toc-text">TextStyle的第三个可选参数 double fontSize</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#TextStyle的第四个可选参数-FontWeight-fontWeight"><span class="post-toc-number">1.1.3.4.</span> <span class="post-toc-text">TextStyle的第四个可选参数 FontWeight fontWeight</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#TextStyle的第五个可选参数-FontStyle-fontStyle"><span class="post-toc-number">1.1.3.5.</span> <span class="post-toc-text">TextStyle的第五个可选参数 FontStyle fontStyle</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#TextStyle的第六个可选参数-double-letterSpacing"><span class="post-toc-number">1.1.3.6.</span> <span class="post-toc-text">TextStyle的第六个可选参数 double letterSpacing</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#TextStyle的第七个可选参数-double-wordSpacing"><span class="post-toc-number">1.1.3.7.</span> <span class="post-toc-text">TextStyle的第七个可选参数 double wordSpacing</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#TextStyle的第八个可选参数-TextBaseline-textBaseline"><span class="post-toc-number">1.1.3.8.</span> <span class="post-toc-text">TextStyle的第八个可选参数 TextBaseline textBaseline</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#TextStyle的第九个可选参数-double-height"><span class="post-toc-number">1.1.3.9.</span> <span class="post-toc-text">TextStyle的第九个可选参数 double height</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#TextStyle的第十个可选参数-Locale-locale"><span class="post-toc-number">1.1.3.10.</span> <span class="post-toc-text">TextStyle的第十个可选参数 Locale locale</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#TextStyle的第十一个可选参数-Paint-foreground"><span class="post-toc-number">1.1.3.11.</span> <span class="post-toc-text">TextStyle的第十一个可选参数 Paint foreground</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#TextStyle的第十二个可选参数-Paint-background"><span class="post-toc-number">1.1.3.12.</span> <span class="post-toc-text">TextStyle的第十二个可选参数 Paint background</span></a></li></ol></li></ol></li></ol></li></ol>
         </nav>
     </aside>
 
@@ -300,7 +305,7 @@
                 </div>
                 <div class="image-caption"></div>
             </figure>
-<h4 id="TextStyle的第五个可选参数-FontStyle-fontStyle"><a href="#TextStyle的第五个可选参数-FontStyle-fontStyle" class="headerlink" title="TextStyle的第五个可选参数 FontStyle fontStyle"></a>TextStyle的第五个可选参数 <font color="green">FontStyle fontStyle</font></h4><p>该参数有两种类型</p>
+<h4 id="TextStyle的第五个可选参数-FontStyle-fontStyle"><a href="#TextStyle的第五个可选参数-FontStyle-fontStyle" class="headerlink" title="TextStyle的第五个可选参数 FontStyle fontStyle"></a>TextStyle的第五个可选参数 <font color="green">FontStyle fontStyle</font></h4><p>该 <strong>Text</strong> 控件中文本的字体显示类型。<br>该参数有两种类型</p>
 <table>
 <thead>
 <tr>
@@ -326,7 +331,73 @@
                 </div>
                 <div class="image-caption"></div>
             </figure>
-<h4 id="TextStyle的第六个可选参数-double-letterSpacing"><a href="#TextStyle的第六个可选参数-double-letterSpacing" class="headerlink" title="TextStyle的第六个可选参数 double letterSpacing"></a>TextStyle的第六个可选参数 <font color="green">double letterSpacing</font></h4>
+<h4 id="TextStyle的第六个可选参数-double-letterSpacing"><a href="#TextStyle的第六个可选参数-double-letterSpacing" class="headerlink" title="TextStyle的第六个可选参数 double letterSpacing"></a>TextStyle的第六个可选参数 <font color="green">double letterSpacing</font></h4><p>该 <strong>Text</strong> 控件中文本的 <strong>字母</strong> 之间的 <strong>间隔空间</strong>，类型为 <strong>双精度</strong>。<br><strong>负数</strong> 可以让字母更加接近。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Text(<span class="string">'Hello world!'</span>, style: <span class="keyword">new</span> TextStyle(color: Colors.greenAccent,</span><br><span class="line">    fontSize: <span class="number">20.0</span>, letterSpacing: -<span class="number">5.0</span>)));</span><br><span class="line">Text(<span class="string">'Hello world!'</span>, style: <span class="keyword">new</span> TextStyle( color: Colors.pinkAccent,</span><br><span class="line">    fontSize: <span class="number">20.0</span>, letterSpacing: <span class="number">0</span>)));</span><br><span class="line">Text(<span class="string">'Hello world!'</span>, style: <span class="keyword">new</span> TextStyle( color: Colors.blue,</span><br><span class="line">    fontSize: <span class="number">20.0</span>, letterSpacing: <span class="number">5</span>)));</span><br></pre></td></tr></table></figure></p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/img/Flutter/TextWigdet/textstyle_letterSpacing.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h4 id="TextStyle的第七个可选参数-double-wordSpacing"><a href="#TextStyle的第七个可选参数-double-wordSpacing" class="headerlink" title="TextStyle的第七个可选参数 double wordSpacing"></a>TextStyle的第七个可选参数 <font color="green">double wordSpacing</font></h4><p>该 <strong>Text</strong> 控件中文本的 <strong>单词</strong> 之间的 <strong>间隔空间</strong>，类型为 <strong>双精度</strong>。<br><strong>负数</strong> 可以让单词更加接近。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Text(<span class="string">'Hello world!'</span>, style: <span class="keyword">new</span> TextStyle(color: Colors.greenAccent,</span><br><span class="line">    fontSize: <span class="number">20.0</span>, wordSpacing: -<span class="number">10.0</span>)));</span><br><span class="line">Text(<span class="string">'Hello world!'</span>, style: <span class="keyword">new</span> TextStyle( color: Colors.pinkAccent,</span><br><span class="line">    fontSize: <span class="number">20.0</span>, wordSpacing: <span class="number">0</span>)));</span><br><span class="line">Text(<span class="string">'Hello world!'</span>, style: <span class="keyword">new</span> TextStyle( color: Colors.blue,</span><br><span class="line">    fontSize: <span class="number">20.0</span>, wordSpacing: <span class="number">10</span>)));</span><br></pre></td></tr></table></figure></p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/img/Flutter/TextWigdet/textstyle_wordSpacing.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h4 id="TextStyle的第八个可选参数-TextBaseline-textBaseline"><a href="#TextStyle的第八个可选参数-TextBaseline-textBaseline" class="headerlink" title="TextStyle的第八个可选参数 TextBaseline textBaseline"></a>TextStyle的第八个可选参数 <font color="green">TextBaseline textBaseline</font></h4><p>该 <strong>Text</strong> 控件中文本的对齐基准线。<br>该参数有两种类型</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">TextBaseline.alphabetic</td>
+<td style="text-align:left"><font color="red">//TODO 目前不清楚含义</font></td>
+</tr>
+<tr>
+<td style="text-align:left">TextBaseline.ideographic</td>
+<td style="text-align:left"><font color="red">//TODO 目前不清楚含义</font></td>
+</tr>
+</tbody>
+</table>
+<h4 id="TextStyle的第九个可选参数-double-height"><a href="#TextStyle的第九个可选参数-double-height" class="headerlink" title="TextStyle的第九个可选参数 double height"></a>TextStyle的第九个可选参数 <font color="green">double height</font></h4><p>该 <strong>Text</strong> 控件中文本的 <strong>行与行显示的距离</strong>，值为 <strong>1~2</strong>。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Text(<span class="string">'Hello Flutter!\nHello Flutter!'</span>, style: <span class="keyword">new</span> TextStyle(color: Colors.greenAccent,</span><br><span class="line">    fontSize: <span class="number">20.0</span>, height: <span class="number">1</span>)));</span><br><span class="line">Text(<span class="string">'Hello Flutter!\nHello Flutter!'</span>, style: <span class="keyword">new</span> TextStyle( color: Colors.pinkAccent,</span><br><span class="line">    fontSize: <span class="number">20.0</span>, height: <span class="number">1.5</span>)));</span><br><span class="line">Text(<span class="string">'Hello Flutter!\nHello Flutter!'</span>, style: <span class="keyword">new</span> TextStyle( color: Colors.blue,</span><br><span class="line">    fontSize: <span class="number">20.0</span>, height: <span class="number">2</span>)));</span><br></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/img/Flutter/TextWigdet/textstyle_height.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h4 id="TextStyle的第十个可选参数-Locale-locale"><a href="#TextStyle的第十个可选参数-Locale-locale" class="headerlink" title="TextStyle的第十个可选参数 Locale locale"></a>TextStyle的第十个可选参数 <font color="green">Locale locale</font></h4><p>用于选择 <strong>区域特定字形</strong> 的区域设置。此参数很少设置，目前不清楚有什么影响。</p>
+<h4 id="TextStyle的第十一个可选参数-Paint-foreground"><a href="#TextStyle的第十一个可选参数-Paint-foreground" class="headerlink" title="TextStyle的第十一个可选参数 Paint foreground"></a>TextStyle的第十一个可选参数 <font color="green">Paint foreground</font></h4><p>该 <strong>Text</strong> 控件中文本的 <strong>前景色</strong>，即文本显示的颜色。</p>
+<blockquote>
+<p>不能和color参数同时设置，否则编译不会出错，运行时Crash。</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Text(<span class="string">'Hello Flutter!'</span>, style: <span class="keyword">new</span> TextStyle(</span><br><span class="line">    color: Colors.greenAccent, fontSize: <span class="number">20.0</span>)));</span><br><span class="line"></span><br><span class="line">Paint foreColor = <span class="keyword">new</span> Paint();</span><br><span class="line">foreColor.color = Colors.pinkAccent;</span><br><span class="line">Text(<span class="string">'Hello Flutter!'</span>, style: <span class="keyword">new</span> TextStyle(</span><br><span class="line">    fontSize: <span class="number">20.0</span>, foreground: foreColor)));</span><br></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/img/Flutter/TextWigdet/textstyle_foreground.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h4 id="TextStyle的第十二个可选参数-Paint-background"><a href="#TextStyle的第十二个可选参数-Paint-background" class="headerlink" title="TextStyle的第十二个可选参数 Paint background"></a>TextStyle的第十二个可选参数 <font color="green">Paint background</font></h4><p>该 <strong>Text</strong> 控件的 <strong>背景</strong> 颜色。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Paint backBlackColor = <span class="keyword">new</span> Paint();</span><br><span class="line">backBlackColor.color = Colors.black;</span><br><span class="line">Paint backYellowColor = <span class="keyword">new</span> Paint();</span><br><span class="line">backYellowColor.color = Colors.yellowAccent;</span><br><span class="line"></span><br><span class="line">Text(<span class="string">'Hello Flutter!'</span>, style: <span class="keyword">new</span> TextStyle(color: Colors.greenAccent,</span><br><span class="line">    fontSize: <span class="number">20.0</span>, background: backBlackColor))),</span><br><span class="line">Text(<span class="string">'Hello Flutter!'</span>, style: <span class="keyword">new</span> TextStyle(color: Colors.pinkAccent,</span><br><span class="line">    fontSize: <span class="number">20.0</span>, background: backYellowColor))),</span><br></pre></td></tr></table></figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/img/Flutter/TextWigdet/textstyle_background.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+
         </div>
 
         <blockquote class="post-copyright">
@@ -334,7 +405,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2019-03-24T11:05:54.511Z" itemprop="dateUpdated">2019-03-24 19:05:54</time>
+    最后更新时间：<time datetime="2019-03-25T15:53:26.006Z" itemprop="dateUpdated">2019-03-25 23:53:26</time>
 </span><br>
 
 
